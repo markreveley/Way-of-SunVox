@@ -17,6 +17,8 @@ print("Generating SunVox sidechain compression examples...")
 print("\n1. Creating sidechain_basic_edm.sunvox...")
 
 p1 = Project()
+p1.sunvox_version = (1, 9, 3, 1)  # Compatible with SunVox 1.9.3
+p1.based_on_version = (1, 9, 3, 1)
 p1.name = "Sidechain - Basic EDM"
 p1.initial_bpm = 128
 p1.initial_tpl = 6
@@ -117,6 +119,8 @@ print(f"   ✓ Created: {output_path}")
 print("\n2. Creating sidechain_vocal_clarity.sunvox...")
 
 p2 = Project()
+p2.sunvox_version = (1, 9, 3, 1)  # Compatible with SunVox 1.9.3
+p2.based_on_version = (1, 9, 3, 1)
 p2.name = "Sidechain - Vocal Clarity"
 p2.initial_bpm = 90
 p2.initial_tpl = 6
